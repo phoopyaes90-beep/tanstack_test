@@ -7,7 +7,7 @@ import useAuthStore from './stores/useAuthStore'
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      retry: (failureCount, error) => {
+      retry: (_failureCount, error) => {
         console.error(error.message)
 
         return !error

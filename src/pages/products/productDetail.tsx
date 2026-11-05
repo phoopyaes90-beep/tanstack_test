@@ -6,7 +6,7 @@ import { Minus, Plus, ShoppingBag, Star } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 
 const ProductDetail = () => {
-  const { productId } = useParams({ from: '/(shop)/products/$productId' })
+  const { productId } = useParams({ from: '/_app/(shop)/products/$productId' })
   const { data: product } = getProductQuery(productId)
 
   const [previewImg, setPreviewImg] = useState('')
@@ -31,11 +31,7 @@ const ProductDetail = () => {
   
   const savedAmount = originalPrice && product ? (originalPrice - product.price).toFixed(2) : null
 
-  const dummyReviews = [
-    { name: "Henry Adams", date: "30 Apr 2025", comment: "Excellent quality!" },
-    { name: "Elijah Cruz", date: "30 Apr 2025", comment: "Very happy with my purchase!" },
-    { name: "William Lopez", date: "30 Apr 2025", comment: "Would buy again!" },
-  ]
+ 
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-8">

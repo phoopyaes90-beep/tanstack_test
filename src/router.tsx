@@ -14,7 +14,8 @@ export function getRouter() {
     defaultPreload: 'intent',
     defaultPreloadStaleTime: 0,
     context:{
-      queryClient
+      queryClient,
+      auth: undefined!
     },
   })
 
