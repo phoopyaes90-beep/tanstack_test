@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <header className="bg-blue-100 flex justify-between max-w-6xl mx-auto ">
       <ul className="flex items-center gap-2 ">
-        {navLinks.filter((link)=> !(isAuthenticated && link.link === '/login')).map((link) => (
+        {navLinks.filter((link)=> !(isAuthenticated && (link.link === '/login' || link.link === '/register'))).map((link) => (
           <li key={link.link}>
             <Link to={link.link}>{link.title}</Link>
           </li>

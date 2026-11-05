@@ -13,7 +13,13 @@ const navLinks = [
     link: '/cart', // localhost:3000/cart
   },
   {
-    title: 'Sign in',
+    title: 'Register',
+    link: '/register', // localhost:3000/sign-up
+  },
+
+
+  {
+    title: 'Login',
     link: '/login', // localhost:3000/sign-in
   },
 
