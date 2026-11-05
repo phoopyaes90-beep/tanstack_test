@@ -9,9 +9,11 @@ const validateSearch = z.object({
 })
 
 
-export const Route = createFileRoute('/(shop)/')({
+export const Route = createFileRoute('/_app/(shop)/')({
   validateSearch,
   component: HomePage,
+
+  
   //   pendingComponent: () => {
   //     return (
   //       <div className="grid grid-cols-4 gap-3">

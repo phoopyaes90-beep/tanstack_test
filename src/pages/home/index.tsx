@@ -36,7 +36,7 @@ const HomePage = () => {
     }, 0)
   }
 
-  // 3. API queries များကို ခေါ်ယူခြင်း
+
   const { data: categories = [] } = getCategoriesQuery()
   const { data: products, isPending } = getProductsQuery(currentCategory)
 

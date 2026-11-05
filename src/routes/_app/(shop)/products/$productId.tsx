@@ -1,8 +1,9 @@
 
+import ProductDetail from '@/pages/products/productDetail'
 import { createFileRoute } from '@tanstack/react-router'
 import { zodValidator } from '@tanstack/zod-adapter'
 import z from 'zod'
-import ProductDetail from '../../../pages/products/productDetail'
+
 
 // const validateSearch = zodValidator(
 //   z.object({
@@ -18,7 +19,7 @@ import ProductDetail from '../../../pages/products/productDetail'
 
 // export const Route = createFileRoute('/(shop)/products/$productId')({
 
-export const Route=createFileRoute('/(shop)/products/$productId')({
+export const Route=createFileRoute('/_app/(shop)/products/$productId')({
   validateSearch: zodValidator(
     z.object({
       category: z.string().optional(),
