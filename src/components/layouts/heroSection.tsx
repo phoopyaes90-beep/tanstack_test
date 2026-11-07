@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="mx-auto max-w-7xl px-6 py-8 font-['Bricolage_Grotesque',Helvetica_Neue,Arial,sans-serif] ">
       <div className="relative overflow-hidden p-8 md:p-16 flex flex-col md:flex-row items-center justify-between bg-[#EAF2FF] rounded-[28px]">
         
-        {/* ဘယ်ဘက် စာသားနဲ့ ခလုတ်များ */}
+    
         <div className="max-w-xl z-10">
           <span className="inline-block rounded-full bg-orange-100 px-3 py-1 text-xs font-semibold text-orange-600 mb-4">
             Up to 17% off this week
@@ -26,19 +26,19 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* ညာဘက် ပုံထည့်မည့်နေရာ */}
+       
         <div className="mt-8 md:mt-0 relative w-full md:w-1/2 flex justify-center items-center">
-          {/* နောက်ခံ အလှဆင် ဒီဇိုင်းဝိုင်းလေးများ */}
+        
           <div className="h-64 w-64 rounded-full bg-blue-100/50 blur-3xl absolute z-0"></div>
 
-          {/* သင့်ရဲ့ ပုံကို ဒီမှာ img src နဲ့ ထည့်ပါ */}
+        
           <img 
             src="/download.svg" 
             alt="Tech and Fashion Gadgets" 
             className="relative z-10 max-w-full h-auto object-contain"
           />
 
-          {/* AirPods Max Floating Card လေး (ပုံအပေါ်မှာ ပေါ်ချင်ရင် ထည့်နိုင်ပါတယ်) */}
+          
           <div className="absolute bottom-4 right-4 rounded-2xl bg-white p-4 shadow-xl flex items-center gap-4 z-20 cursor-pointer hover:shadow-2xl transition-all duration-300">
             <div className="h-12 w-12 bg-slate-100 rounded-xl flex items-center justify-center text-xl">
                 🎧

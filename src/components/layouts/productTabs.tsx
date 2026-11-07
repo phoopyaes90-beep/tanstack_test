@@ -11,7 +11,7 @@ export const ProductTabs = ({ selectedTab, onTabChange, categories }: ProductTab
   return (
     <div className="mx-auto max-w-7xl px-6 mb-8">
       <Tabs value={selectedTab} onValueChange={onTabChange}>
-        {/* Shadcn ScrollArea ကို အသုံးပြု၍ ဘေးတိုက် scroll ဆွဲခြင်း */}
+      
         <ScrollArea className="w-full whitespace-nowrap pb-3">
           <TabsList className="flex h-auto w-max items-center justify-start gap-2 bg-transparent p-0">
             {/* All Products Tab */}
@@ -22,7 +22,7 @@ export const ProductTabs = ({ selectedTab, onTabChange, categories }: ProductTab
               All
             </TabsTrigger>
 
-            {/* API မှ ရလာသော Categories များကို map ဖြင့် ထုတ်ပြခြင်း */}
+           
             {categories.map((cat: any) => {
               const categorySlug = typeof cat === 'string' ? cat : cat.slug;
               const categoryName = typeof cat === 'string' ? cat : (cat.name || cat.slug);
@@ -38,7 +38,7 @@ export const ProductTabs = ({ selectedTab, onTabChange, categories }: ProductTab
               )
             })}
           </TabsList>
-          {/* Scrollbar ကို horizontal ပုံစံဖြင့် ပြသရန် */}
+         
           <ScrollBar orientation="horizontal" className="invisible hover:visible" />
         </ScrollArea>
       </Tabs>
